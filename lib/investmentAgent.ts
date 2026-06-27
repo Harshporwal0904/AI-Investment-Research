@@ -147,8 +147,11 @@ Analyze realistic current values. The chart arrays must have exactly 5 years. Re
 
   try {
     const rawContent = response.content.toString().trim();
-    // Parse out markdown brackets if LLM outputs them despite constraints
-    const jsonStr = rawContent.replace(/^```json\s*/i, "").replace(/```$/, "").trim();
+    let jsonStr = rawContent.replace(/^```json\s*/i, "").replace(/```$/, "").trim();
+    
+    // Clean trailing commas before close braces or close brackets
+    jsonStr = jsonStr.replace(/,\s*([}\]])/g, "$1");
+    
     const result = JSON.parse(jsonStr);
     return result;
   } catch (err) {
