@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #FFF8E8;
+  --color-electric-green: #7CFF5B;
+  --color-hot-pink: #FF4D8D;
+  --color-bright-yellow: #FFD43B;
+  --color-sky-blue: #5BC0FF;
+  --color-purple: #A259FF;
+  
+  --font-space: var(--font-space-grotesk), "Space Grotesk", sans-serif;
+  --font-mono: var(--font-ibm-plex-mono), "IBM Plex Mono", monospace;
+  
+  --shadow-neo-sm: 2px 2px 0px 0px #000000;
+  --shadow-neo: 5px 5px 0px 0px #000000;
+  --shadow-neo-lg: 8px 8px 0px 0px #000000;
+  --shadow-neo-xl: 12px 12px 0px 0px #000000;
+  
+  --shadow-neo-green: 5px 5px 0px 0px #7CFF5B;
+  --shadow-neo-pink: 5px 5px 0px 0px #FF4D8D;
+  --shadow-neo-yellow: 5px 5px 0px 0px #FFD43B;
+  --shadow-neo-blue: 5px 5px 0px 0px #5BC0FF;
+  --shadow-neo-purple: 5px 5px 0px 0px #A259FF;
+}
+
+:root {
+  --background: #FFF8E8;
+  --foreground: #000000;
+  --card-bg: #FFFFFF;
+  --border-color: #000000;
+}
+
+.dark {
+  --background: #121212;
+  --foreground: #FFFFFF;
+  --card-bg: #1e1e1e;
+  --border-color: #FFFFFF;
+  
+  /* Redefine shadows for dark mode to use white borders/shadows or colored offsets */
+  --shadow-neo-sm: 2px 2px 0px 0px #FFFFFF;
+  --shadow-neo: 5px 5px 0px 0px #FFFFFF;
+  --shadow-neo-lg: 8px 8px 0px 0px #FFFFFF;
+  --shadow-neo-xl: 12px 12px 0px 0px #FFFFFF;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-mono);
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Neo Brutalist scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+  border-left: 3px solid var(--border-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--foreground);
+  border: 3px solid var(--background);
+}
+
+/* Custom needle rotation styles */
+.needle-rotate {
+  transform-origin: 50% 100%;
+  transition: transform 1.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Utilities for Neo Brutalism */
+.neo-border {
+  border: 3.5px solid var(--border-color);
+}
+
+.neo-border-sm {
+  border: 2px solid var(--border-color);
+}
+
+.neo-card {
+  background-color: var(--card-bg);
+  border: 3.5px solid var(--border-color);
+  box-shadow: var(--shadow-neo);
+}
+
+.neo-card-green {
+  background-color: var(--color-electric-green);
+  border: 3.5px solid var(--border-color);
+  box-shadow: var(--shadow-neo);
+}
+
+.neo-card-pink {
+  background-color: var(--color-hot-pink);
+  border: 3.5px solid var(--border-color);
+  box-shadow: var(--shadow-neo);
+}
+
+.neo-card-yellow {
+  background-color: var(--color-bright-yellow);
+  border: 3.5px solid var(--border-color);
+  box-shadow: var(--shadow-neo);
+}
+
+.neo-card-blue {
+  background-color: var(--color-sky-blue);
+  border: 3.5px solid var(--border-color);
+  box-shadow: var(--shadow-neo);
+}
+
+.neo-card-purple {
+  background-color: var(--color-purple);
+  border: 3.5px solid var(--border-color);
+  box-shadow: var(--shadow-neo);
+}
+
+.neo-btn {
+  background-color: var(--color-bright-yellow);
+  color: #000000;
+  font-family: var(--font-space);
+  font-weight: 800;
+  text-transform: uppercase;
+  border: 3.5px solid var(--border-color);
+  box-shadow: var(--shadow-neo);
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.15s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.neo-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0px 0px var(--border-color);
+}
+
+.neo-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px var(--border-color);
+}
