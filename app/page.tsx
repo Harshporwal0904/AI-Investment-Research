@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { useStore } from "@/store/useStore";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
@@ -11,10 +12,18 @@ import FloatingAssistant from "@/components/FloatingAssistant";
 import Footer from "@/components/Footer";
 
 export default function Home() {
-  const { activeTab, isAnalyzing } = useStore();
+  const { activeTab, isAnalyzing, darkMode } = useStore();
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [darkMode]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-cream dark:bg-zinc-950 transition-colors duration-200">
+    <div className="min-h-screen flex flex-col">
       
       {/* Sticky Top Navbar */}
       <Navbar />
