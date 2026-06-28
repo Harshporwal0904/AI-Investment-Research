@@ -4,7 +4,7 @@ NEO.AI is a stock market analysis and investment research application. It combin
 
 ---
 
-## 🚀 Overview — What It Does
+## Overview — What It Does
 
 NEO.AI acts as an autonomous investment analyst. Instead of manually cross-referencing news articles, financial statements, and valuation metrics, users simply input a company name or ticker symbol. The application then orchestrates an agentic workflow to:
 1. **Discover & Disambiguate**: Map the user query to a correct stock ticker.
@@ -15,7 +15,7 @@ NEO.AI acts as an autonomous investment analyst. Instead of manually cross-refer
 
 ---
 
-## 🛠️ How to Run It — Setup and Run Steps
+## How to Run It — Setup and Run Steps
 
 ### 1. Prerequisites
 Ensure you have **Node.js** (v18 or higher) and **npm** installed on your system.
@@ -48,7 +48,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 
 ---
 
-## 🧠 How It Works — Approach and Architecture
+## How It Works — Approach and Architecture
 
 NEO.AI is powered by a custom-orchestrated **LangGraph.js** state graph paired with **Gemini 2.5 Flash** for deep analytical reasoning.
 
@@ -80,7 +80,7 @@ graph TD
 
 ---
 
-## ⚖️ Key Decisions & Trade-offs
+## Key Decisions & Trade-offs
 
 ### 1. Hybrid AI-Data Sourcing
 * **Decision**: We use the unofficial `yahoo-finance2` package for factual, numerical data retrieval, but use Gemini to extract, format, and synthesize the quantitative analysis.
@@ -96,7 +96,7 @@ graph TD
 
 ---
 
-## 📈 Example Runs
+## Example Runs
 
 ### 1. Alphabet Inc. (`GOOGL`)
 * **Decision**: **INVEST**
@@ -122,7 +122,7 @@ graph TD
 
 ---
 
-## 🔮 What We Would Improve With More Time
+## What We Would Improve With More Time
 
 1. **Production API Ingestion**: Transition from the unofficial `yahoo-finance2` scraper/library to a dedicated financial provider API (e.g., Polygon.io, SEC EDGAR integration, or AlphaVantage) to prevent IP-based rate limiting.
 2. **Chart Customization**: Allow users to toggle between different chart metrics (e.g., Debt/Equity trends, ROE trends) instead of showing only Revenue and EPS.
