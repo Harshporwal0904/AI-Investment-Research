@@ -248,29 +248,29 @@ export default function Dashboard() {
         </h2>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
-          <div className="border-l-[3.5px] border-purple pl-3 py-1">
+          <div className="border-l-[3.5px] border-purple pl-3 py-1 min-w-0">
             <span className="block font-mono text-xxs text-gray-500 uppercase font-bold">CEO</span>
-            <span className="font-mono font-bold text-sm text-black dark:text-white truncate">{activeReport.companyOverview.ceo}</span>
+            <span className="block font-mono font-bold text-sm text-black dark:text-white break-words">{activeReport.companyOverview.ceo}</span>
           </div>
           
-          <div className="border-l-[3.5px] border-hot-pink pl-3 py-1">
+          <div className="border-l-[3.5px] border-hot-pink pl-3 py-1 min-w-0">
             <span className="block font-mono text-xxs text-gray-500 uppercase font-bold">Market Capitalization</span>
-            <span className="font-mono font-bold text-sm text-black dark:text-white">{activeReport.companyOverview.marketCap}</span>
+            <span className="block font-mono font-bold text-sm text-black dark:text-white break-words">{activeReport.companyOverview.marketCap}</span>
           </div>
 
-          <div className="border-l-[3.5px] border-bright-yellow pl-3 py-1">
+          <div className="border-l-[3.5px] border-bright-yellow pl-3 py-1 min-w-0">
             <span className="block font-mono text-xxs text-gray-500 uppercase font-bold">Sector / Industry</span>
-            <span className="font-mono font-bold text-sm text-black dark:text-white truncate">{activeReport.companyOverview.industry}</span>
+            <span className="block font-mono font-bold text-sm text-black dark:text-white break-words">{activeReport.companyOverview.industry}</span>
           </div>
 
-          <div className="border-l-[3.5px] border-electric-green pl-3 py-1">
+          <div className="border-l-[3.5px] border-electric-green pl-3 py-1 min-w-0">
             <span className="block font-mono text-xxs text-gray-500 uppercase font-bold">HQ Location</span>
-            <span className="font-mono font-bold text-sm text-black dark:text-white truncate">{activeReport.companyOverview.headquarters}</span>
+            <span className="block font-mono font-bold text-sm text-black dark:text-white break-words">{activeReport.companyOverview.headquarters}</span>
           </div>
 
-          <div className="border-l-[3.5px] border-sky-blue pl-3 py-1">
+          <div className="border-l-[3.5px] border-sky-blue pl-3 py-1 min-w-0">
             <span className="block font-mono text-xxs text-gray-500 uppercase font-bold">Founded / Exchange</span>
-            <span className="font-mono font-bold text-sm text-black dark:text-white truncate">
+            <span className="block font-mono font-bold text-sm text-black dark:text-white break-words">
               {activeReport.companyOverview.founded} | {activeReport.companyOverview.exchange}
             </span>
           </div>
