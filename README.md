@@ -1,6 +1,6 @@
 # NEO.AI — AI Research Agent
 
-NEO.AI is a premium, Neo-Brutalist stock market analysis and investment research application. It combines real-time data ingestion with structured, multi-node agentic reasoning to produce institutional-grade company reports, financial evaluations, and risk models.
+NEO.AI is a stock market analysis and investment research application. It combines real-time data ingestion with structured, multi-node agentic reasoning to produce institutional-grade company reports, financial evaluations, and risk models.
 
 ---
 
