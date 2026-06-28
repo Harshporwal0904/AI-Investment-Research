@@ -53,14 +53,14 @@ async function collectDataNode(
 
   try {
     // 1. Search for symbol if query is not a direct ticker
-    const searchResults = await yahooFinance.search(state.query);
+    const searchResults: any = await yahooFinance.search(state.query);
     if (searchResults?.quotes && searchResults.quotes.length > 0) {
       ticker = searchResults.quotes[0].symbol;
     }
 
     // 2. Fetch profile and quotes
     yahooQuote = await yahooFinance.quote(ticker);
-    const summary = await yahooFinance.quoteSummary(ticker, {
+    const summary: any = await yahooFinance.quoteSummary(ticker, {
       modules: ["assetProfile"]
     });
     yahooProfile = summary.assetProfile || {};
@@ -150,7 +150,7 @@ async function evaluateFinancialsNode(
 
   try {
     // Fetch key financials and statistics
-    const summary = await yahooFinance.quoteSummary(ticker, {
+    const summary: any = await yahooFinance.quoteSummary(ticker, {
       modules: ["financialData", "defaultKeyStatistics"]
     });
     yahooFinancials = summary;
@@ -232,7 +232,7 @@ async function analyzeRisksNode(
   let rawNews: any[] = [];
 
   try {
-    const searchResults = await yahooFinance.search(ticker);
+    const searchResults: any = await yahooFinance.search(ticker);
     rawNews = searchResults.news || [];
   } catch (err) {
     console.error("Yahoo Finance news fetch failed, relying on Gemini fallback:", err);
