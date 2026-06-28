@@ -38,28 +38,28 @@ const mockReports: Record<string, any> = {
         { year: "2022", value: 365.8 },
         { year: "2023", value: 394.3 },
         { year: "2024", value: 383.3 },
-        { year: "2025 (Est)", value: 391.0 },
+        { year: "2025", value: 391.0 },
         { year: "2026 (Est)", value: 412.5 }
       ],
       netIncome: [
         { year: "2022", value: 94.7 },
         { year: "2023", value: 99.8 },
         { year: "2024", value: 97.0 },
-        { year: "2025 (Est)", value: 100.9 },
+        { year: "2025", value: 100.9 },
         { year: "2026 (Est)", value: 108.2 }
       ],
       operatingCashFlow: [
         { year: "2022", value: 104.0 },
         { year: "2023", value: 122.1 },
         { year: "2024", value: 110.5 },
-        { year: "2025 (Est)", value: 116.6 },
+        { year: "2025", value: 116.6 },
         { year: "2026 (Est)", value: 124.0 }
       ],
       epsTrend: [
         { year: "2022", value: 5.61 },
         { year: "2023", value: 6.11 },
         { year: "2024", value: 6.13 },
-        { year: "2025 (Est)", value: 6.60 },
+        { year: "2025", value: 6.60 },
         { year: "2026 (Est)", value: 7.20 }
       ]
     },
@@ -161,28 +161,28 @@ const mockReports: Record<string, any> = {
         { year: "2022", value: 168.1 },
         { year: "2023", value: 198.3 },
         { year: "2024", value: 211.9 },
-        { year: "2025 (Est)", value: 245.1 },
+        { year: "2025", value: 245.1 },
         { year: "2026 (Est)", value: 279.4 }
       ],
       netIncome: [
         { year: "2022", value: 61.3 },
         { year: "2023", value: 72.7 },
         { year: "2024", value: 72.4 },
-        { year: "2025 (Est)", value: 88.1 },
+        { year: "2025", value: 88.1 },
         { year: "2026 (Est)", value: 99.8 }
       ],
       operatingCashFlow: [
         { year: "2022", value: 76.7 },
         { year: "2023", value: 89.0 },
         { year: "2024", value: 87.6 },
-        { year: "2025 (Est)", value: 110.0 },
+        { year: "2025", value: 110.0 },
         { year: "2026 (Est)", value: 122.5 }
       ],
       epsTrend: [
         { year: "2022", value: 8.05 },
         { year: "2023", value: 9.65 },
         { year: "2024", value: 9.68 },
-        { year: "2025 (Est)", value: 11.80 },
+        { year: "2025", value: 11.80 },
         { year: "2026 (Est)", value: 13.40 }
       ]
     },
@@ -284,28 +284,28 @@ const mockReports: Record<string, any> = {
         { year: "2022", value: 53.8 },
         { year: "2023", value: 81.5 },
         { year: "2024", value: 96.8 },
-        { year: "2025 (Est)", value: 98.2 },
+        { year: "2025", value: 98.2 },
         { year: "2026 (Est)", value: 108.5 }
       ],
       netIncome: [
         { year: "2022", value: 5.5 },
         { year: "2023", value: 12.6 },
         { year: "2024", value: 15.0 },
-        { year: "2025 (Est)", value: 11.2 },
+        { year: "2025", value: 11.2 },
         { year: "2026 (Est)", value: 13.8 }
       ],
       operatingCashFlow: [
         { year: "2022", value: 11.5 },
         { year: "2023", value: 14.7 },
         { year: "2024", value: 13.3 },
-        { year: "2025 (Est)", value: 12.1 },
+        { year: "2025", value: 12.1 },
         { year: "2026 (Est)", value: 15.2 }
       ],
       epsTrend: [
         { year: "2022", value: 1.63 },
         { year: "2023", value: 3.62 },
         { year: "2024", value: 4.30 },
-        { year: "2025 (Est)", value: 3.22 },
+        { year: "2025", value: 3.22 },
         { year: "2026 (Est)", value: 3.95 }
       ]
     },
@@ -407,28 +407,28 @@ const mockReports: Record<string, any> = {
         { year: "2022", value: 16.6 },
         { year: "2023", value: 26.9 },
         { year: "2024", value: 27.0 },
-        { year: "2025 (Est)", value: 60.9 },
+        { year: "2025", value: 60.9 },
         { year: "2026 (Est)", value: 120.4 }
       ],
       netIncome: [
         { year: "2022", value: 4.3 },
         { year: "2023", value: 9.7 },
         { year: "2024", value: 4.8 },
-        { year: "2025 (Est)", value: 29.8 },
+        { year: "2025", value: 29.8 },
         { year: "2026 (Est)", value: 64.2 }
       ],
       operatingCashFlow: [
         { year: "2022", value: 5.8 },
         { year: "2023", value: 9.1 },
         { year: "2024", value: 5.6 },
-        { year: "2025 (Est)", value: 28.1 },
+        { year: "2025", value: 28.1 },
         { year: "2026 (Est)", value: 67.5 }
       ],
       epsTrend: [
         { year: "2022", value: 0.17 },
         { year: "2023", value: 0.39 },
         { year: "2024", value: 0.19 },
-        { year: "2025 (Est)", value: 1.19 },
+        { year: "2025", value: 1.19 },
         { year: "2026 (Est)", value: 2.55 }
       ]
     },
@@ -530,28 +530,28 @@ const mockReports: Record<string, any> = {
         { year: "2022", value: 469.8 },
         { year: "2023", value: 514.0 },
         { year: "2024", value: 574.8 },
-        { year: "2025 (Est)", value: 632.1 },
+        { year: "2025", value: 632.1 },
         { year: "2026 (Est)", value: 701.5 }
       ],
       netIncome: [
         { year: "2022", value: 33.4 },
         { year: "2023", value: -2.7 },
         { year: "2024", value: 30.4 },
-        { year: "2025 (Est)", value: 41.2 },
+        { year: "2025", value: 41.2 },
         { year: "2026 (Est)", value: 52.8 }
       ],
       operatingCashFlow: [
         { year: "2022", value: 46.3 },
         { year: "2023", value: 46.8 },
         { year: "2024", value: 84.9 },
-        { year: "2025 (Est)", value: 92.5 },
+        { year: "2025", value: 92.5 },
         { year: "2026 (Est)", value: 110.2 }
       ],
       epsTrend: [
         { year: "2022", value: 3.24 },
         { year: "2023", value: -0.27 },
         { year: "2024", value: 2.90 },
-        { year: "2025 (Est)", value: 3.90 },
+        { year: "2025", value: 3.90 },
         { year: "2026 (Est)", value: 4.95 }
       ]
     },
