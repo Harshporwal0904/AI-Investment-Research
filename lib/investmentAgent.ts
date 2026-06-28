@@ -162,7 +162,7 @@ async function evaluateFinancialsNode(
 Use the following raw financial data from Yahoo Finance:
 ${JSON.stringify(yahooFinancials)}
 
-Format this data into clean, readable financial metrics (e.g. human readable numbers like "$385.6B" or "75.0x" or "15.4%") and produce a realistic 5-year historical/estimate trend of data points for charts.
+Format this data into clean, readable financial metrics (e.g. human readable numbers like "$385.6B" or "75.0x" or "15.4%") and produce a realistic 5-year trend of data points for charts covering the years 2022, 2023, 2024, 2025, and 2026 (label them as "2022", "2023", "2024", "2025 (Est)", and "2026 (Est)").
 Return ONLY a valid JSON object matching this structure exactly, with no additional text or formatting:
 {
   "financialHealth": {
